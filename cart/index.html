@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="">
+    <div id="nav-part2">
+        <h4><a href="../loginpage/index.html">Sign-In</a></h4>
+        <h4><a href="#">Contact</a></h4>
+    </div>
+    <h3>Menu</h3>
+  </nav>
+
+  <div class="container">
+      <h1>Your Cart</h1>
+
+      <table id="cart-table">
+          <thead>
+              <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Cart items will be added here -->
+          </tbody>
+      </table>
+
+      <div id="cart-total">
+          <h2>Total: <span id="total-amount">0.00</span></h2>
+      </div>
+
+      <div class="product-details">
+        <div class="product-info">
+          <h2>Jeans</h2>
+          <p class="product-price">$19.99</p>
+          <button class="add-to-cart" data-name="Jeans" data-price="19.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <button id="checkout-btn">Checkout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

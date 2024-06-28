@@ -1,0 +1,30 @@
+.product-details {
+  display: flex; /* Arrange image and info side-by-side */
+  gap: 20px;
+}
+
+.product-image {
+  width: 300px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex-grow: 1; /* Allow info section to expand to fill remaining space */
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.add-to-cart {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

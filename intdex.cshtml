@@ -1,0 +1,27 @@
+@model IEnumerable<ShopEasy.Models.Product>
+
+<h1>Products</h1>
+
+<p>
+    <a href="/Products/Create">Create New</a>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
